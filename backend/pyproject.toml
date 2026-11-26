@@ -1,0 +1,20 @@
+[project]
+name = "home-kb-backend"
+version = "0.1.0"
+description = "家庭物品知识库助手 · FastAPI 后端"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "sqlalchemy>=2",
+  "psycopg[binary]",
+  "pgvector",
+  "alembic",
+  "pydantic-settings",
+  "python-multipart",
+  "httpx",
+]
+
+[project.optional-dependencies]
+worker = ["pymupdf", "docling"]
+dev = ["pytest", "ruff"]
