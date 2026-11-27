@@ -1,0 +1,40 @@
+[project]
+name = "phase0"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yoko502", email = "yoxixi233@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=3.6.1",
+    "lingua-language-detector>=2.2.0",
+    "numpy>=2.5.5",
+    "openai>=3.60.0",
+    "pandas>=3.1.1",
+    "pgvector>=0.5.1",
+    "psycopg[binary]>=3.3.9",
+    "pydantic>=2.14.4",
+    "pymupdf>=2.2",
+    "pymupdf4llm>=2.2",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.4",
+    "rank-bm25>=0.2.2",
+    "sudachidict-core>=20261015",
+    "sudachipy>=0.7.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+phase0 = "phase0:main"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.6",
+]

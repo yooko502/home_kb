@@ -14,3 +14,9 @@ node_modules/
 out/
 *.tsbuildinfo
 next-env.d.ts
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+experiments/phase0/data/raw/
+experiments/phase0/data/parsed/
+experiments/phase0/runs/*.jsonl
